@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    background-color: #504848;
+    /* position: fixed; */
+    color: #f0f0f0;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #212121;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.toggle-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #979797;
+}
+
+.toggle-btn span:nth-child(1){
+    top: 0;
+}
+
+.toggle-btn span:nth-child(3){
+    top: 100%;
+}
+
+.logo{
+    
+    align-items:center;
+    height: 50px;
+    width: 100px;
+    margin: -10px 30px 0;
+    margin-top : 0px;
+}
+
+.search-box{
+    position: relative;
+    max-width: 500px;
+    width: 50%;
+    height: 35px;
+    display: flex;
+    margin-left: 220px;
+
+}
+
+.search-bar{
+    width: 85%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.search-btn{
+    width: 15%;
+    height: 100%;
+    background: #706565;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+}
+
+.search-btn img{
+    height: 100%;
+}
+
+.user-options{
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+#creat{
+    width: 40px;
+    height: 40px;
+}
+
+.user-options .icon{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-dp{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+iframe{
+    border: none;
+    position: absolute;
+    left: 12%;
+    width:70%;
+    height:500px;
+    margin: auto;
+}
+
+/* container */
+
+#container{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    /* left: -135px; */
+}
+
+.play-video{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    width: 60%;
+    background-color: aquamarine;
+    height: 100%;
+}
+#play iframe{
+    /* position: absolute; */
+    position: fixed;
+    margin-left: -165px;
+    width: 60%;
+}
+.play-video #details{
+    background-color: #121111;
+    color: white;
+    /* border-radius: 15px; */
+    position: fixed;
+    bottom: 2px;
+    width: 60%;
+    height: 80px;
+    overflow:auto;
+    padding: 15px;
+}
+.right{
+    position: fixed;
+    left: 800px;
+    top: 60px;
+    /* margin-left: 155px; */
+    width: calc(100% - 400px);
+}
+.down{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed;
+    left: 800px;
+    width:60%; */
+    /* top: 115px; */
+    position: fixed;
+    background-color: #121111;
+    height: 100%;
+    width:100%
+}
+
+
+.filters{ 
+    height: 60px;
+    background: black;
+    color: white;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.filters::-webkit-scrollbar{
+    display: none;
+}
+
+.filter-options{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: black;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    margin-right: 1px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filter-options.active{
+    color:  #242424;
+    background: #fff;
+}
+
+.vedio{
+    display: flex;
+    width: 75%;
+}
+
+.thumbnail{
+    width: 25%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.content{
+    width: 90%;
+    height: 100px;
+    padding: 8px;
+    display: flex;
+   
+}
+
+.channel-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+.info{
+    width: 40%;
+}
+.title{
+    font-size: 17px;
+}
+.ctitle{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.video-container{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -20px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
+}
+
+.vedio1{
+    min-height: 250px;
+    height: auto;
+}
+
+.thumbnail1{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.content1{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-icon1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+

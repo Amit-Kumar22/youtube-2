@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="./images/Logo.png" class="logo" alt="">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn" onclick="searchYouTube()"><img src="./images/search.png" alt=""></button>
+            <img src="./images/mic.png" alt="">
+        </div>
+        <div class="user-options">
+            <img src="./images/create.png" class="icon" id="creat" alt="">
+            <img src="./images/apps.png" class="icon" alt="">
+            <img src="./images/notifications.png" class="icon" alt="">
+            <div class="user-dp">
+                <img src="./images/Profile-pic.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <div id="load" class="load">
+        <div id="loader"></div>
+    </div>
+    <!-- sidebar -->
+    <div id="side-bar" class="side-bar">
+        <a href="#" class="links active"><img src="./images/home.png" alt="">home</a>
+        <a href="#" class="links"><img src="./images/explore.png" alt="">explore</a>
+        <a href="#" class="links"><img src="./images/subscriprion.png" alt="">subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><img src="./images/library.png" alt="">library</a>
+        <a href="#" class="links"><img src="./images/history.png" alt="">history</a>
+        <a href="#" class="links"><img src="./images/playlist.png" alt="">your video</a>
+        <a href="#" class="links"><img src="./images/gerard.png" alt="">watch leater</a>
+        <a href="#" class="links"><img src="./images/liked.png" alt="">like video</a>
+        <a href="#" class="links"><img src="./images/show-more.png" alt="">show more</a><br>
+        <a href="#" class="links">SUBSCRIPTIONS</a>
+        <a href="#" class="links"><img src="./images/avatar.png" alt="">James Gouse</a>
+        <a href="#" class="links"><img src="./images/avatar2.png" alt="">Alan Cooper Gouse</a>
+        <a href="#" class="links"><img src="./images/avatar3.png" alt="">Marcus Levin</a>
+        <a href="#" class="links"><img src="./images/avatar4.png" alt="">santosh vlog</a>
+        <a href="#" class="links"><img src="./images/avatar.png" alt="">amit vines</a>
+        <a href="#" class="links"><img src="./images/avatar2.png" alt="">sandeep blogs</a>
+        <a href="#" class="links"><img src="./images/avatar4.png" alt="">rahul tech</a>
+        <a href="#" class="links"><img src="./images/avatar3.png" alt="">sudhir gyan</a>
+        <a href="#" class="links"><img src="./images/show-more.png" alt="">show 13 more</a>
+    </div>
+
+    <!-- filters -->
+    <div class="filters">
+        <button class="filter-options active">all</button>
+        <button class="filter-options">CSS</button>
+        <button class="filter-options">web development</button>
+        <button class="filter-options">python</button>
+        <button class="filter-options">entertainment</button>
+        <button class="filter-options">marvel</button>
+        <button class="filter-options">javascript</button>
+        <button class="filter-options">artificial intelligence</button>
+        <button class="filter-options">machine learning</button>
+        <button class="filter-options">trending</button>
+    </div>
+
+    <!-- videos -->
+    <div id="video-container" class="video-container"></div>
+       <!-- <div id="videolist"></div> -->
+    
+       <!-- <script src="./script2.js"></script> -->
+     <script src="./script.js"></script>
+     <!-- <script src="./xcv.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://apis.google.com/js/api.js"></script> -->
+
+    
+</body>
+</html>
